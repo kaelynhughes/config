@@ -3,7 +3,7 @@ import = [
 ]
 
 [window]
-opacity = 0.95
+opacity = 1
 
 [font.normal]
 family = "SpaceMono Nerd Font"
