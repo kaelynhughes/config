@@ -9,3 +9,6 @@ vim.opt.shiftwidth = 4
 
 -- true color support
 vim.opt.termguicolors = true
+
+-- disable mouse :P
+vim.opt.mouse = ""
