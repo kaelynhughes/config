@@ -1,0 +1,28 @@
+# Colors (Chadracula - taken from NVChad)
+
+# Default colors
+[colors.primary]
+background = '#430A5D'
+foreground = '#F8F8F2'
+
+# Normal colors
+[colors.normal]
+black   = '#222430'
+red     = '#ff7070'
+green   = '#50fa7b'
+yellow  = '#f1fa8c'
+blue    = '#c197fd'
+magenta = '#ff79c6'
+cyan    = '#62d6e8'
+white   = '#e9e9f4'
+
+# Bright colors
+[colors.bright]
+black   = '#3a3c4e'
+red     = '#ffb86c'
+green   = '#5dff88'
+yellow  = '#ffffa5'
+blue    = '#bd93f9'
+magenta = '#ff86d3'
+cyan    = '#8be9fd'
+white   = '#ffffff'
