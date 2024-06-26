@@ -1,46 +1,46 @@
 # Edited version of catppuccin's mocha flavour for maximum girlypop
 
 [colors.primary]
-background = '#1E1E2E' # base
-foreground = '#CDD6F4' # text
+background = '#320044' # base
+foreground = '#EFCBFB' # text
 # Bright and dim foreground colors
-dim_foreground = '#CDD6F4' # text
-bright_foreground = '#CDD6F4' # text
+dim_foreground = '#EFCBFB' # text
+bright_foreground = '#EFCBFB' # text
 
 # Cursor colors
 [colors.cursor]
-text = '#1E1E2E' # base
+text = '#320044' # base
 cursor = '#F5E0DC' # rosewater
 
 [colors.vi_mode_cursor]
-text = '#1E1E2E' # base
+text = '#320044' # base
 cursor = '#B4BEFE' # lavender
 
 # Search colors
 [colors.search.matches]
-foreground = '#1E1E2E' # base
+foreground = '#320044' # base
 background = '#A6ADC8' # subtext0
 
 [colors.search.focused_match]
-foreground = '#1E1E2E' # base
+foreground = '#320044' # base
 background = '#A6E3A1' # green
 
 [colors.footer_bar]
-foreground = '#1E1E2E' # base
+foreground = '#320044' # base
 background = '#A6ADC8' # subtext0
 
 # Keyboard regex hints
 [colors.hints.start]
-foreground = '#1E1E2E' # base
+foreground = '#320044' # base
 background = '#F9E2AF' # yellow
 
 [colors.hints.end]
-foreground = '#1E1E2E' # base
+foreground = '#320044' # base
 background = '#A6ADC8' # subtext0
 
 # Selection colors
 [colors.selection]
-text = '#1E1E2E' # base
+text = '#320044' # base
 background = '#F5E0DC' # rosewater
 
 # Normal colors
