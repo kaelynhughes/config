@@ -41,6 +41,11 @@ require("catppuccin").setup({
     },
     color_overrides = {
         mocha = {
+            rosewater = '#ffdff0',
+            flamingo = '#ffb0e6',
+            pink = '#ff82d7',
+            red = '#ff52c8',
+            maroon = '#FF6D86',
             peach = '#F09867',
             yellow = '#F8F3A6',
             blue = '#c1fcf5',
