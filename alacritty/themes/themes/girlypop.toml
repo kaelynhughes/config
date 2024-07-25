@@ -10,7 +10,7 @@ bright_foreground = '#EFCBFB' # text
 # Cursor colors
 [colors.cursor]
 text = '#320044' # base
-cursor = '#F5E0DC' # rosewater
+cursor = '#FFDFF0' # rosewater
 
 [colors.vi_mode_cursor]
 text = '#320044' # base
@@ -41,37 +41,37 @@ background = '#C29BCF' # subtext0
 # Selection colors
 [colors.selection]
 text = '#320044' # base
-background = '#F5E0DC' # rosewater
+background = '#FFDFF0' # rosewater
 
 # Normal colors
 [colors.normal]
 black = '#592C68' # surface1
-red = '#F38BA8' # red
+red = '#FF52C8' # red
 green = '#A6E3A1' # green
 yellow = '#F8F3A6' # yellow
 blue = '#C1FCF5' # blue
-magenta = '#F5C2E7' # pink
+magenta = '#FFB0E6' # pink
 cyan = '#94E2D5' # teal
 white = '#D8B3E5' # subtext1
 
 # Bright colors
 [colors.bright]
 black = '#6D417B' # surface2
-red = '#F38BA8' # red
+red = '#FF52C8' # red
 green = '#A6E3A1' # green
 yellow = '#F8F3A6' # yellow
 blue = '#C1FCF5' # blue
-magenta = '#F5C2E7' # pink
+magenta = '#FFB0E6' # pink
 cyan = '#94E2D5' # teal
 white = '#C29BCF' # subtext0
 
 # Dim colors
 [colors.dim]
 black = '#592C88' # surface1 
-red = '#F38BA8' # red 
+red = '#FF52C8' # red 
 green = '#A6E3A1' # green
 yellow = '#F8F3A6' # yellow
 blue = '#C1FCF5' # blue
-magenta = '#F5C2E7' # pink
+magenta = '#FFB0E6' # pink
 cyan = '#94E2D5' # teal
 white = '#D8B3E5' # subtext1

@@ -14,7 +14,7 @@ return {
 
         -- Snippets - required
 	'L3MON4D3/LuaSnip',
-	config = function() 
+	config = function()
 		local lsp_zero = require('lsp-zero')
 
 		lsp_zero.on_attach(function(client, bufnr)
