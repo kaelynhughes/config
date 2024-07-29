@@ -29,8 +29,11 @@ Currently I use `oh-my-zsh` and have yet to figure out how to move all that into
 alias py="python3"
 alias gc="git commit -m"
 alias gp="git push"
+alias gpb="git push -u origin HEAD"
 alias ga="git add"
 alias gs="git status"
+alias gco="git checkout"
+alias gcob="git checkout -b"
 ```
 
 ## Zoxide
