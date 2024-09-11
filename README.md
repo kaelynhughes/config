@@ -36,6 +36,16 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 ```
 
+## `cdls` Command
+
+Add the following snippet to `~.zshrc` for a quicker version of `cd [dir] && ls`:
+
+```
+cdls() {
+    cd "$1" && ls
+}
+```
+
 ## Zoxide
 
 I have this installed but as of yet have not used it much. It's a cooler version of `cd` that will remember long path names for you. To install, first `brew install zoxide`, then add the following line to the end of `.zshrc`:
