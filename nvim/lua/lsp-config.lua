@@ -9,7 +9,8 @@ require('mason-lspconfig').setup({
     ensure_installed = {
         'lua_ls',
         'tsserver',
-        'pyright'
+        'pyright',
+        'svelte'
     },
     handlers = {
         function(server_name)
