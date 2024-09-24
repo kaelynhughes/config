@@ -36,12 +36,12 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 ```
 
-## `cdls` Command
+## `cl` Command
 
 Add the following snippet to `~.zshrc` for a quicker version of `cd [dir] && ls`:
 
 ```
-cdls() {
+cl() {
     cd "$1" && ls
 }
 ```
