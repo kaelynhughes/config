@@ -34,6 +34,7 @@ alias ga="git add"
 alias gs="git status"
 alias gco="git checkout"
 alias gcob="git checkout -b"
+alias gh="open -a firefox -g https://github.com"
 ```
 
 ## `cl` Command
