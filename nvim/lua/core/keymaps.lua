@@ -12,6 +12,16 @@ vim.keymap.set('n', '<leader>c', tree.tree.close, {})
 
 vim.keymap.set('n', '<leader>md', md.toggle, {})
 
+-- Turn off inline diagnostics & add keymaps to see them in a floating window
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = '',
+            [vim.diagnostic.severity.WARN] = '',
+        }
+    }
+});
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {});
 vim.keymap.set('n', '<leader>n', vim.diagnostic.goto_next, {});
 vim.keymap.set('n', '<leader>b', vim.diagnostic.goto_prev, {});
