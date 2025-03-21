@@ -1,3 +1,6 @@
+-- import constants --
+local constants = require('core.constants')
+
 -- import apis --
 local telescope = require('telescope.builtin')
 local tree = require('nvim-tree.api')
@@ -22,9 +25,9 @@ vim.diagnostic.config({
     virtual_text = false,
     signs = {
         text = {
-            [vim.diagnostic.severity.ERROR] = '󰅚',
-            [vim.diagnostic.severity.WARN] = '',
-            [vim.diagnostic.severity.HINT] = '󰌶'
+            [vim.diagnostic.severity.ERROR] = constants.icons.diagnostic.error,
+            [vim.diagnostic.severity.WARN] = constants.icons.diagnostic.warn,
+            [vim.diagnostic.severity.HINT] = constants.icons.diagnostic.hint
         }
     }
 });

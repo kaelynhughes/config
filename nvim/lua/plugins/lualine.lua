@@ -1,3 +1,5 @@
+local constants = require("core.constants")
+
 return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -24,7 +26,15 @@ return {
               },
               sections = {
                 lualine_a = {'mode'},
-                lualine_b = {'branch', 'diff', 'diagnostics'},
+                lualine_b = {'branch', 'diff', {
+                  'diagnostics',
+                  symbols = {
+                      error = constants.icons.diagnostic.error .. ' ',
+                      warn = constants.icons.diagnostic.warn .. ' ',
+                      hint = constants.icons.diagnostic.hint .. ' '
+                    }
+                  }
+                },
                 lualine_c = {'filename'},
                 lualine_x = {'encoding', 'fileformat', 'filetype'},
                 lualine_y = {'progress'},
