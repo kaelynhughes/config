@@ -1,4 +1,5 @@
-zmodload zsh/zprof
+# IMPORTANT: uncomment the following line & the one at the bottom to diagnose speed issues
+# zmodload zsh/zprof
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -131,8 +132,30 @@ timezsh() {
 
 # NVM is node version manager & can help if I ever need to do stuff with old projects
 # but it is SLOW - added over a second every time i had to open a new shell
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# instead the following two functions replace only the initial call to either nvm or npm
+# which lazy load NVM when it's actually needed and then do the intended command
+function nvm () 
+{
+  unfunction nvm
+  unfunction npm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  echo "nvm installed"
+  [[ $# < 1 ]] && nvm --version || nvm $@
+}
 
-zprof
+function npm () 
+{
+  echo "nvm isn't installed! fixing that..."
+  unfunction nvm
+  unfunction npm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  echo "nvm installed"
+  [[ $# < 1 ]] && npm --version || npm $@
+}
+
+# IMPORTANT: uncomment this line and the one at the top to diagnose speed issues
+# zprof
