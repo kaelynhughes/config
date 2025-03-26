@@ -7,6 +7,7 @@ Main folders:
 - `alacritty`: visual settings for terminal emulator. Includes `alacritty.toml` with main settings (font, window opacity, path to color scheme) plus a folder for themes, cloned directly from `alacritty-themes` and committed in its entirety for ease of access & use. To use a custom theme, create a file in `.toml` format or copy and edit an existing theme file.
 - `nvim`: configuration for Neovim; more details on its structure below.
 - `tmux`: includes a `tmux.conf` file and nothing else for now.
+- `zsh`: includes my .zshrc and omz theme.
 
 Neovim checks for an `init.lua` file in `~/.config/nvim` by default, and all other config info has to be loaded through it. Any `require` statements search for the specified file in `./lua`. Other than those defaults, it's sort of a personal choice how you want to organize your files.
 
