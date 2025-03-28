@@ -83,7 +83,7 @@
         "format": "",
     },
     "custom/power": {
-        "tooltip-format": "TODO setup",
+        "tooltip-format": "TODO test",
         // "on-click": "wlogout &",
         "format" : "⏻ ",
         "menu": "on-click",
