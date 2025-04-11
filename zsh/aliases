@@ -1,0 +1,10 @@
+alias py="python3"
+alias gc="git commit -m"
+alias gp="git push"
+alias gpb="git push -u origin HEAD"
+alias ga="git add"
+alias gs="git status"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gh="open -a firefox -g https://github.com"
+
