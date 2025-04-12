@@ -1,0 +1,37 @@
+/*
+*
+* Catppuccin Mocha palette
+* Maintainer: rubyowo
+*
+*/
+
+@define-color base   #320044;
+@define-color mantle #000000;
+@define-color crust  #000000;
+
+@define-color text     #EFCBFB;
+@define-color subtext0 #C29BCF;
+@define-color subtext1 #D8B3E5;
+
+@define-color surface0 #451755;
+@define-color surface1 #592C68;
+@define-color surface2 #6D417B;
+
+@define-color overlay0 #825790;
+@define-color overlay1 #976DA4;
+@define-color overlay2 #AC83B9;
+
+@define-color blue      #89b4fa;
+@define-color lavender  #E9A6FF;
+@define-color sapphire  #74c7ec;
+@define-color sky       #89dceb;
+@define-color teal      #94e2d5;
+@define-color green     #a6e3a1;
+@define-color yellow    #F8F3A6;
+@define-color peach     #F09867;
+@define-color maroon    #FF6D86;
+@define-color red       #FF52C8;
+@define-color mauve     #cba6f7;
+@define-color pink      #FF82D7;
+@define-color flamingo  #FFB0E6;
+@define-color rosewater #FFDFF0;
