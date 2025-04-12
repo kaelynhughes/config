@@ -2,12 +2,12 @@
 
 * {
     font-family: SpaceMono Nerd Font;
-    font-size: 11px;
+    font-size: 12px;
     min-height: 0;
 }
 
-#waybar {
-    background-image: linear-gradient(@surface1, @overlay0);
+window#waybar {
+    background: transparent;
     color: @text;
     margin: 1px 1px;
 }
@@ -16,6 +16,8 @@
     color: @text;
     background-color: @surface0;
 }
+
+/* LEFT */
 
 #workspaces {
     border-radius: 1rem;
@@ -39,29 +41,59 @@
     border-radius: 1rem;
 }
 
+/* RIGHT */
+
+
+/* set bubble background */
 #custom-music,
 #tray,
+#custom-notifications,
+#pulseaudio,
 #network,
 #backlight,
-#clock,
 #battery,
-#pulseaudio,
+#clock,
 #custom-lock,
 #custom-power {
     background-color: @surface0;
-    padding: 0.5rem 0.5rem;
+    padding: 1px 0.5rem;
     margin: 2px 0;
 }
 
+/* add curved edges */
+
 #clock {
-    color: @blue;
     border-radius: 0px 1rem 1rem 0px;
     padding-right: 1rem;
     margin-right: 1rem;
 }
 
-#battery {
-    color: @green;
+#custom-notifications {
+    border-radius: 1rem 0px 0px 1rem;
+    padding-left: 1rem;
+}
+
+#custom-lock {
+    padding-left: 1rem;
+    border-radius: 1rem 0px 0px 1rem;
+}
+
+#custom-power {
+    margin-right: 1rem;
+    border-radius: 0px 1rem 1rem 0px;
+}
+
+/* set colors */
+
+#custom-notifications,
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#clock,
+#custom-lock,
+#custom-power {
+    color: @text;
 }
 
 #battery.charging {
@@ -72,41 +104,17 @@
     color: @red
 }
 
-#backlight {
-    color: @yellow;
-}
-
-#backlight, #battery {
-    border-radius: 0;
-}
-
-#pulseaudio {
-    color: @maroon;
-    border-radius: 1rem 0px 0px 1rem;
-    padding-left: 1rem;
-}
-
 #custom-music {
     color: @mauve;
     border-radius: 1rem;
-}
-
-#custom-lock {
-    color: @lavender;
-    padding-left: 1rem;
-    border-radius: 1rem 0px 0px 1rem;
-}
-
-#custom-power {
-    margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
-    color: @red;
 }
 
 #tray {
     margin-right: 1rem;
     border-radius: 1rem;
 }
+
+/* set css for xml menu */
 
 menu {
     border-radius: 15px;
@@ -118,6 +126,6 @@ menuitem {
     border-radius: 15px;
 }
 
-menu.active {
+menuitem.active {
     background: @text;
 }
