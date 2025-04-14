@@ -21,6 +21,16 @@ fpath=($DOTFILES/zsh/prompt $fpath)
 # source $DOTFILES/zsh/prompt/prompt_purification_setup
 source $DOTFILES/zsh/prompt/prompt_original_setup
 
+# + --------- +
+# | LS COLORS |
+# + --------- +
+
+export CLICOLOR=1
+
+# + --------- +
+# | FUNCTIONS |
+# + --------- +
+
 cl() {
     cd "$1" && ls
 }
