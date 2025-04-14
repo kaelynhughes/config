@@ -15,6 +15,9 @@ return {
                 }
             },
             filters = {},
+            update_focused_file = {
+                enable = true,
+            },
         })
     end
 }
