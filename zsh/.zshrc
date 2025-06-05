@@ -26,6 +26,8 @@ source $DOTFILES/zsh/prompt/prompt_original_setup
 # + --------- +
 
 export CLICOLOR=1
+# see `man ls` for options
+export LSCOLORS="Exfxcxdxbxegedabagacadah"
 
 # + --------- +
 # | FUNCTIONS |
