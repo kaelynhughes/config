@@ -85,3 +85,12 @@ vim.cmd.colorscheme "catppuccin"
 
 -- disable mouse :P
 vim.opt.mouse = ""
+
+-- scrolling
+-- scroll = 5       -- sets number of lines to move on CTRL-U and CTRL-D; default 0 is half the window
+-- scrolloff = 3    -- keep this many lines above and below the cursor; default 0, large number (eg 999) puts cursor in middle
+
+-- currently this only works if vim.opt.mouse is not set. figure this out
+vim.opt.mousescroll = "ver:0,hor:0";
+vim.keymap.set('n', '<ScrollWheelUp>', '<C-y>', {})
+vim.keymap.set('n', '<ScrollWheelDown>', '<C-e>', {})
