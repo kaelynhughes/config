@@ -70,7 +70,7 @@ function nvm ()
 
 function npm () 
 {
-  echo "nvm isn't installed! fixing that..."
+  echo "installing nvm..."
   unfunction nvm
   unfunction npm
   export NVM_DIR="$HOME/.nvm"
