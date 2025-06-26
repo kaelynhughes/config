@@ -37,3 +37,18 @@ vim.keymap.set('n', '<leader>p', vim.diagnostic.goto_prev, {});
 
 -- git blame --
 vim.keymap.set('n', '<leader>b', blame.toggle, {})
+
+-- custom gf --
+-- open files in their own tmux pane --
+-- come back to this later - got stuck on running a tmux command -- 
+-- local function custom_vim_gx ()
+--     if os.getenv("TMUX") == nil then
+--         vim.cmd('normal! gf')
+--     else
+--         this would be something like "tmux split-window -c '#{pane_current_path}' 'nvim {vim.fn.expand('<cfile>')}'"
+--         might need to grab some sort of path to current file rather than pane current path
+--         print(vim.fn.expand('<cfile>'))
+--     end
+-- end
+
+-- vim.keymap.set('n', '<leader>gf', custom_vim_gx, {})
