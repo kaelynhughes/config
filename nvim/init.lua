@@ -9,3 +9,5 @@ require('lazy').setup('plugins', opts)
 require('lsp-config')
 require('core/keymaps')
 require('core/opt')
+
+vim.g.pyindent_open_paren = 0
