@@ -38,6 +38,14 @@ alias gcob="git checkout -b"
 alias gh="open -a firefox -g https://github.com"
 ```
 
+## Link zsh config
+
+To make sure that zsh config automatically updates via git, create a symlink in `~` linking to `.zshenv`:
+
+```
+ln ...
+```
+
 ## `cl` Command
 
 Add the following snippet to `~.zshrc` for a quicker version of `cd [dir] && ls`:
