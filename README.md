@@ -43,7 +43,7 @@ alias gh="open -a firefox -g https://github.com"
 To make sure that zsh config automatically updates via git, create a symlink in `~` linking to `.zshenv`:
 
 ```
-ln ...
+ln .config/zsh/.zshenv .zshenv
 ```
 
 ## `cl` Command
