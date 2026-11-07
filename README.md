@@ -61,6 +61,14 @@ Install font from [NerdFonts](https://www.nerdfonts.com/font-downloads), then in
 
 - [SauceCodePro Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/SourceCodePro.zip)
 
+Install package manager if not already installed
+
+- MacOS ARM64: Homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+- MacOS Intel: [MacPorts](https://www.macports.org/install.php)
+
 Install directly from script:
 
 - NVM and latest version of node. The function created in `.zshrc` activates NVM - it does not install it. This is used for a number of neovim plugins, so it will not work correctly until this is done.
@@ -69,14 +77,19 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.8/install.sh | bash
 nvm install node
 ```
 
-Install executable:
+Install executables:
 
 - [Alacritty](https://www.alacritty.org)
+- [Rectangle](https://rectangleapp.com/)
 
 Install with package manager:
 
+- `neovim`: text editor
 - `tmux`: tiling manager
+- `tree-sitter` & `tree-sitter-cli`: parsing library
 - `tmux-mem-cpu-load`: adds memory usage to tmux status bar (note: not available through macports. Compile from source?)
+- `ripgrep`: dependency for nvim-telescope
+- `python3` if not automatically installed
 
 ### Link zsh config
 
@@ -85,6 +98,20 @@ To make sure that zsh config automatically updates via git, create a symlink in 
 ```
 ln .config/zsh/.zshenv .zshenv
 ```
+
+### Other apps I usually need
+
+General:
+- [Firefox](https://www.firefox.com/)
+- [Bitwarden](https://bitwarden.com/download/)
+- [Zoom](https://zoom.us/download)
+- [Spotify](https://open.spotify.com/download)
+- Markdown editor for long documents - [OneMarkdown](https://apps.apple.com/us/app/one-markdown/id1507139439), [Obsidian](https://obsidian.md/download) or similar
+
+Programming:
+- [VSCode](https://code.visualstudio.com/download)
+- [Insomnia](https://insomnia.rest/download) for REST APIs
+- [Docker](https://www.docker.com/products/docker-desktop/)
 
 
 ## Other Notes
