@@ -1,6 +1,6 @@
 return {
-  'nvim-telescope/telescope.nvim', 
-	tag = '0.1.x',
+  'nvim-telescope/telescope.nvim',
+	verson = '*',
 	dependencies = {
         'nvim-lua/plenary.nvim',
         { 'nvim-telescope/telescope-fzf-native.nvim', build='make' },
@@ -13,6 +13,9 @@ return {
               n = {
                 ["<C-c>"] = "close"
               }
+            },
+            preview = {
+              treesitter = false,
             }
           }
         }
