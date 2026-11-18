@@ -9,4 +9,9 @@ require('lazy').setup('plugins', opts)
 require('core/keymaps')
 require('core/opt')
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'svelte' },
+  callback = function() vim.treesitter.start() end,
+})
+
 vim.g.pyindent_open_paren = 0
